@@ -3,9 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import './styles/rem'
-import './styles/reset.css'
-import './styles/iconfont.css'
+import '@/styles/rem'
+import '@/styles/reset.css'
+import '@/styles/iconfont.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
 import FastClick from 'fastclick'
 
