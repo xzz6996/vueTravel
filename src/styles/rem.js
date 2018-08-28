@@ -1,0 +1,3 @@
+
+  		(function (doc, win) { var de = doc.documentElement, re = 'orientationchange' in window ? 'orientationchange' : 'resize', recalc = function () {var cw = de.clientWidth; if (!cw) return; de.style.fontSize = cw>=750 ? '100px' : 100 * (cw / 750) + 'px'; };recalc(); if (!doc.addEventListener) return; win.addEventListener(re, recalc, false); doc.addEventListener('DOMContentLoaded', recalc, false); })(document, window);
+	
