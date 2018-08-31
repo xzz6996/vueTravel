@@ -1,6 +1,6 @@
 <template>
     <div class="warpper">
-        <swiper :options="swiperOption" ref="mySwiper">
+        <swiper :options="swiperOption" ref="mySwiper" v-if="swiperList.length">
     <!-- slides -->
     <swiper-slide v-for="(item,index) in swiperList" :key="index"><img class='swiper-img' :src="item.imgUrl" alt=""></swiper-slide> 
     <!-- Optional controls -->
@@ -13,20 +13,15 @@
 <script>
 export default {
     name:'HomeSwiper',
+    props:{
+        swiperList:Array
+    },
     data(){
         return {
             swiperOption: {
                 pagination:'.swiper-pagination',
-                loop:true //循环
-            },
-            swiperList:[
-                {
-                    imgUrl:"https://source.qunarzz.com/site/images/wap/home/recommend/iphoneplus/dujia_shuqi_banner_20180710.jpg"
-                },
-                {
-                    imgUrl:"https://source.qunarzz.com/site/images/wap/home/recommend/iphoneplus/anquan_20180716.png"
-                }
-            ]
+                loop:true, //循环                
+            }           
         }
     }
 }
@@ -40,7 +35,7 @@ export default {
     width :100%;
     height: 0;
     overflow :hidden;
-    padding-bottom 24.5%
+    padding-bottom 32%
     background #ccc
     .swiper-img
         width :100%

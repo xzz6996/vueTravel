@@ -1,12 +1,12 @@
 <template>
     <div class="icons">
-        <swiper>
+        <swiper :options="swiperOption">
             <swiper-slide v-for="(page,index) in pages" :key="index">
-                <div class="icon" v-for="(item,index) in list" :key="index">
+                <div class="icon" v-for="(item,index) in page" :key="index">
                     <div class='icon-img'>
                         <img :src="item.imgUrl" alt="" class="icon-imgs">
                     </div>
-                    <p class="icon-conten">{{item.content}}</p>
+                    <p class="icon-conten">{{item.desc}}</p>
                 </div>
             </swiper-slide>    
         </swiper>
@@ -16,42 +16,14 @@
 <script>
 export default {
     name:"HomeICons",
+    props:{
+        list:Array
+    },
     data (){
         return{
-            list:[
-                {
-                    imgUrl:"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3065014263,1876107866&fm=58",
-                    content:"签证 · WiFi"
-                },
-                {
-                    imgUrl:"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3065014263,1876107866&fm=58",
-                    content:"签证 · WiFi"
-                },
-                {
-                    imgUrl:"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3065014263,1876107866&fm=58",
-                    content:"签证 · WiFi"
-                },
-                {
-                    imgUrl:"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3065014263,1876107866&fm=58",
-                    content:"签证 · WiFi"
-                },
-                {
-                    imgUrl:"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3065014263,1876107866&fm=58",
-                    content:"签证 · WiFi"
-                },
-                {
-                    imgUrl:"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3065014263,1876107866&fm=58",
-                    content:"签证 · WiFi"
-                },
-                {
-                    imgUrl:"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3065014263,1876107866&fm=58",
-                    content:"签证 · WiFi"
-                },
-                {
-                    imgUrl:"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3065014263,1876107866&fm=58",
-                    content:"签证 · WiFi"
-                },
-            ]    
+             swiperOption: {
+                autoplay: false
+            },
         }
     },
     computed:{
@@ -91,9 +63,13 @@ export default {
             right 0
             bottom 0.4rem
             .icon-imgs
-                display block
-                height 100% 
-                margin 0 auto
+                height: 1rem;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                margin: auto;
         .icon-conten
             position: absolute
             bottom: 0

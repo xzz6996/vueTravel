@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import home from '@/pages/home/Home'
-import list from '@/pages/list/List'
+import city from '@/pages/city/city'
+import detail from '@/pages/detail/detail'
 
 Vue.use(Router)
 
@@ -13,9 +14,14 @@ export default new Router({
       component: home
     },
     {
-      path: '/list',
-      name: 'list',
-      component: list
+      path: '/city',
+      name: 'city',
+      component: city
+    },
+    {
+      path: '/detail/:id',
+      name: 'detail',
+      component: detail
     }
   ]
 })

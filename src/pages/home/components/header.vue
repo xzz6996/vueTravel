@@ -7,16 +7,23 @@
            <span class='iconfont'>&#xe632;</span>
            请输入选择城市
         </div>
-       <div class='header-right'>
-           <span>城市</span>
-           <span class='iconfont'>&#xe62d;</span>
-        </div>
+        <router-link to='/city'>
+            <div class='header-right'>
+            <span>{{this.city}}</span>
+            <span class='iconfont'>&#xe62d;</span>
+            </div>
+        </router-link>
     </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-    
+   computed:{
+       ...mapState([
+           'city'
+       ])
+   }     
 }
 </script>
 
@@ -24,7 +31,7 @@ export default {
     @import '~@/styles/common.styl'
     .header
         display:flex
-        line-height:0.86rem
+        line-height:$headerHeight
         background :$bgcolor
         color:#fff
         font-size:0.18rem
@@ -45,7 +52,9 @@ export default {
             border-radius:0.1rem
             color: #ccc
         .header-right
-            width:1.24rem
+            min-width:1.04rem
+            padding 0 0.1rem
             float:right
             text-align:center
+            color:#fff
 </style>

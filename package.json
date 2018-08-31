@@ -10,6 +10,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "better-scroll": "^1.12.6",
     "fastclick": "^1.0.6",
     "styles": "^0.2.1",
     "styles-loader": "^1.0.0",
@@ -17,7 +19,8 @@
     "stylus-loader": "^3.0.2",
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^2.6.7",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

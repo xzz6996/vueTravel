@@ -3,11 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import '@/styles/rem'
 import '@/styles/reset.css'
 import '@/styles/iconfont.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+import axios from 'axios'
+Vue.prototype.axios=axios;
+
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
 import FastClick from 'fastclick'
@@ -25,6 +29,7 @@ if ('addEventListener' in document) {
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
