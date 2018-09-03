@@ -1,8 +1,5 @@
 <template>
-  <div style="    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 100;">
+  <div style="    position: absolute;left: 0;top: 0;z-index: 100;">
     <router-link
       tag="div"
       to="/"
@@ -25,6 +22,7 @@
 
 <script>
 export default {
+ 
   name: 'DetailHeader',
   data () {
     return {
