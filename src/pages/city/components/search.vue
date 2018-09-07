@@ -20,7 +20,7 @@ export default {
     },
     data(){
         return{
-            keyword:'',
+            keyword:null,
             list:[],
             timer:null
         }
@@ -53,6 +53,7 @@ export default {
     methods:{
         handleChangeCity(city){
             this.$store.dispatch('changeCity',city);
+            this.keyword=null;
             this.$router.push('/');
         }
     }
