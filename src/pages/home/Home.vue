@@ -33,7 +33,7 @@ export default {
     },
     methods:{
         getHomeInfo(){
-            this.axios.get('https://github.com/xzz6996/vueTravel/tree/master/static/mock/index.json?city=北京').then(r=>{
+            this.axios.get('/api/index.json?city='+this.city).then(r=>{
             this.iconList=r.data.data.iconList;
             this.recommendList=r.data.data.recommendList;
             this.swiperList=r.data.data.swiperList;
