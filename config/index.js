@@ -10,14 +10,14 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {
-      '/api':{
-        target:'https://github.com/xzz6996/vueTravel/tree/master',
-        pathRewrite:{
-          '^/api':'https://github.com/xzz6996/vueTravel/tree/master/static/mock'
-        }
-      }
-    },
+    // proxyTable: {
+    //   '/api':{
+    //     target:'https://github.com/xzz6996/vueTravel/tree/master',
+    //     pathRewrite:{
+    //       '^/api':'https://github.com/xzz6996/vueTravel/tree/master/static/mock'
+    //     }
+    //   }
+    // },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
