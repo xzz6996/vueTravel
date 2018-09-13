@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api':{
-        target:'http://localhost:8080',
+        target:'https://github.com/xzz6996/vueTravel/tree/master',
         pathRewrite:{
           '^/api':'/static/mock'
         }
