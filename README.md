@@ -1,11 +1,11 @@
 # travel
 
 > A Vue.js project
-![Image text](https://github.com/xzz6996/vueTravel/tree/master/static/1.png)
-![Image text](https://github.com/xzz6996/vueTravel/tree/master/static/2.png)
-![Image text](https://github.com/xzz6996/vueTravel/tree/master/static/3.png)
-![Image text](https://github.com/xzz6996/vueTravel/tree/master/static/4.png)
-![Image text](https://github.com/xzz6996/vueTravel/tree/master/static/5.png)
+![Image text](https://raw.githubusercontent.com/xzz6996/vueTravel/master/static/1.png)
+![Image text](https://raw.githubusercontent.com/xzz6996/vueTravel/master/static/2.png)
+![Image text](https://raw.githubusercontent.com/xzz6996/vueTravel/master/static/3.png)
+![Image text](https://raw.githubusercontent.com/xzz6996/vueTravel/master/static/4.png)
+![Image text](https://raw.githubusercontent.com/xzz6996/vueTravel/master/static/5.png)
 
 ## Build Setup
 
