@@ -14,7 +14,7 @@ module.exports = {
       '/api':{
         target:'https://github.com/xzz6996/vueTravel/tree/master',
         pathRewrite:{
-          '^/api':'/static/mock'
+          '^/api':'https://github.com/xzz6996/vueTravel/tree/master/static/mock'
         }
       }
     },
