@@ -1,6 +1,6 @@
 # travel
-
-> A Vue.js project
+ A Vue.js project 
+ vue+vuex+axios+stylus+better-scroll+swiper
 ![Image text](https://raw.githubusercontent.com/xzz6996/vueTravel/master/static/1.png)
 ![Image text](https://raw.githubusercontent.com/xzz6996/vueTravel/master/static/2.png)
 ![Image text](https://raw.githubusercontent.com/xzz6996/vueTravel/master/static/3.png)
